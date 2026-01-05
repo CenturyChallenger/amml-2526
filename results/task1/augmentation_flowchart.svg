@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <!-- Title -->
+  <text x="400" y="30" font-size="20" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    Data Augmentation Pipeline for MNIST
+  </text>
+  
+  <!-- Original Image -->
+  <rect x="300" y="60" width="200" height="80" fill="#3498db" stroke="#2c3e50" stroke-width="2" rx="10"/>
+  <text x="400" y="95" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Original MNIST Image</text>
+  <text x="400" y="115" font-size="12" text-anchor="middle" fill="white">(28×28 grayscale)</text>
+  
+  <!-- Arrow down -->
+  <path d="M 400 140 L 400 170" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Augmentation Techniques -->
+  <rect x="200" y="170" width="400" height="50" fill="#e74c3c" stroke="#2c3e50" stroke-width="2" rx="10"/>
+  <text x="400" y="200" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Apply Random Augmentation</text>
+  
+  <!-- Branching arrows -->
+  <path d="M 250 220 L 250 270" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 400 220 L 400 270" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 550 220 L 550 270" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Rotation -->
+  <rect x="150" y="270" width="200" height="70" fill="#9b59b6" stroke="#2c3e50" stroke-width="2" rx="8"/>
+  <text x="250" y="295" font-size="13" font-weight="bold" text-anchor="middle" fill="white">Rotation</text>
+  <text x="250" y="315" font-size="11" text-anchor="middle" fill="white">±10-15 degrees</text>
+  <text x="250" y="330" font-size="10" text-anchor="middle" fill="#ecf0f1">Handles orientation</text>
+  
+  <!-- Translation -->
+  <rect x="300" y="270" width="200" height="70" fill="#16a085" stroke="#2c3e50" stroke-width="2" rx="8"/>
+  <text x="400" y="295" font-size="13" font-weight="bold" text-anchor="middle" fill="white">Translation</text>
+  <text x="400" y="315" font-size="11" text-anchor="middle" fill="white">±10% shift</text>
+  <text x="400" y="330" font-size="10" text-anchor="middle" fill="#ecf0f1">Positional variance</text>
+  
+  <!-- Scaling -->
+  <rect x="450" y="270" width="200" height="70" fill="#f39c12" stroke="#2c3e50" stroke-width="2" rx="8"/>
+  <text x="550" y="295" font-size="13" font-weight="bold" text-anchor="middle" fill="white">Scaling</text>
+  <text x="550" y="315" font-size="11" text-anchor="middle" fill="white">0.9-1.1x</text>
+  <text x="550" y="330" font-size="10" text-anchor="middle" fill="#ecf0f1">Size variations</text>
+  
+  <!-- More techniques branching -->
+  <path d="M 250 340 L 250 380" stroke="#2c3e50" stroke-width="2"/>
+  <path d="M 400 340 L 400 380" stroke="#2c3e50" stroke-width="2"/>
+  <path d="M 550 340 L 550 380" stroke="#2c3e50" stroke-width="2"/>
+  
+  <!-- Shearing -->
+  <rect x="150" y="380" width="200" height="70" fill="#e67e22" stroke="#2c3e50" stroke-width="2" rx="8"/>
+  <text x="250" y="405" font-size="13" font-weight="bold" text-anchor="middle" fill="white">Shearing</text>
+  <text x="250" y="425" font-size="11" text-anchor="middle" fill="white">±5 degrees</text>
+  <text x="250" y="440" font-size="10" text-anchor="middle" fill="#ecf0f1">Perspective changes</text>
+  
+  <!-- Elastic Deformation -->
+  <rect x="300" y="380" width="200" height="70" fill="#27ae60" stroke="#2c3e50" stroke-width="2" rx="8"/>
+  <text x="400" y="405" font-size="13" font-weight="bold" text-anchor="middle" fill="white">Elastic Distortion</text>
+  <text x="400" y="425" font-size="11" text-anchor="middle" fill="white">Local deformations</text>
+  <text x="400" y="440" font-size="10" text-anchor="middle" fill="#ecf0f1">Writing variations</text>
+  
+  <!-- Noise Addition -->
+  <rect x="450" y="380" width="200" height="70" fill="#c0392b" stroke="#2c3e50" stroke-width="2" rx="8"/>
+  <text x="550" y="405" font-size="13" font-weight="bold" text-anchor="middle" fill="white">Gaussian Noise</text>
+  <text x="550" y="425" font-size="11" text-anchor="middle" fill="white">σ = 0.05</text>
+  <text x="550" y="440" font-size="10" text-anchor="middle" fill="#ecf0f1">Robustness</text>
+  
+  <!-- Merge back -->
+  <path d="M 250 450 L 400 490" stroke="#2c3e50" stroke-width="2"/>
+  <path d="M 400 450 L 400 490" stroke="#2c3e50" stroke-width="2"/>
+  <path d="M 550 450 L 400 490" stroke="#2c3e50" stroke-width="2"/>
+  
+  <!-- Combine -->
+  <path d="M 400 490 L 400 520" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Augmented Image -->
+  <rect x="250" y="520" width="300" height="70" fill="#2ecc71" stroke="#2c3e50" stroke-width="2" rx="10"/>
+  <text x="400" y="545" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Augmented Image Set</text>
+  <text x="400" y="565" font-size="12" text-anchor="middle" fill="white">Expanded Training Dataset</text>
+  <text x="400" y="580" font-size="11" text-anchor="middle" fill="#ecf0f1">(Multiple variations per image)</text>
+  
+  <!-- Arrow down to normalization -->
+  <path d="M 400 590 L 400 620" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Normalization -->
+  <rect x="275" y="620" width="250" height="60" fill="#34495e" stroke="#2c3e50" stroke-width="2" rx="10"/>
+  <text x="400" y="645" font-size="13" font-weight="bold" text-anchor="middle" fill="white">Normalization</text>
+  <text x="400" y="665" font-size="11" text-anchor="middle" fill="white">μ = 0.1307, σ = 0.3081</text>
+  
+  <!-- Arrow to model -->
+  <path d="M 400 680 L 400 710" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Model Training -->
+  <rect x="250" y="710" width="300" height="70" fill="#8e44ad" stroke="#2c3e50" stroke-width="2" rx="10"/>
+  <text x="400" y="735" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Model Training</text>
+  <text x="400" y="755" font-size="12" text-anchor="middle" fill="white">Enhanced Generalization</text>
+  <text x="400" y="770" font-size="11" text-anchor="middle" fill="#ecf0f1">Reduced Overfitting</text>
+  
+  <!-- Benefits Box -->
+  <rect x="50" y="820" width="700" height="140" fill="#ecf0f1" stroke="#2c3e50" stroke-width="2" rx="10"/>
+  <text x="400" y="845" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">Benefits of Data Augmentation</text>
+  
+  <text x="70" y="875" font-size="12" fill="#2c3e50">✓ Increases effective training set size (5-10x)</text>
+  <text x="70" y="895" font-size="12" fill="#2c3e50">✓ Improves model robustness to variations</text>
+  <text x="70" y="915" font-size="12" fill="#2c3e50">✓ Reduces overfitting on small datasets</text>
+  <text x="70" y="935" font-size="12" fill="#2c3e50">✓ Enhances generalization performance</text>
+  
+  <text x="420" y="875" font-size="12" fill="#2c3e50">✓ No additional labeled data required</text>
+  <text x="420" y="895" font-size="12" fill="#2c3e50">✓ Computationally efficient (real-time)</text>
+  <text x="420" y="915" font-size="12" fill="#2c3e50">✓ Prevents model memorization</text>
+  <text x="420" y="935" font-size="12" fill="#2c3e50">✓ Handles class imbalance better</text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#2c3e50"/>
+    </marker>
+  </defs>
+  
+  <!-- Reference -->
+  <text x="400" y="990" font-size="10" text-anchor="middle" fill="#7f8c8d">
+    References: Perez &amp; Wang (2017), Simard et al. (2003)
+  </text>
+</svg>
