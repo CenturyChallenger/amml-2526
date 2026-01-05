@@ -1,0 +1,61 @@
+================================================================================
+TASK 1: MODEL EVALUATION REPORT
+================================================================================
+
+
+MODEL0
+----------------------------------------
+
+Classification Performance:
+  Accuracy:  0.0393
+  Precision: 0.0883
+  Recall:    0.0393
+  F1-Score:  0.0528
+  Mean AUC:  0.4946
+
+Reconstruction Performance:
+  MSE Loss:  0.010270
+  Mean PSNR: 20.27 dB
+
+Computational Efficiency:
+  Parameters: 647,081
+  Inference:  0.33 ms/sample
+
+
+MODEL1
+----------------------------------------
+
+Classification Performance:
+  Accuracy:  0.0595
+  Precision: 0.0661
+  Recall:    0.0595
+  F1-Score:  0.0599
+  Mean AUC:  0.5113
+
+Reconstruction Performance:
+  MSE Loss:  0.024933
+  Mean PSNR: 16.37 dB
+
+Computational Efficiency:
+  Parameters: 647,081
+  Inference:  0.47 ms/sample
+
+
+MODEL2
+----------------------------------------
+
+Classification Performance:
+  Accuracy:  0.0290
+  Precision: 0.1250
+  Recall:    0.0290
+  F1-Score:  0.0403
+  Mean AUC:  0.4582
+
+Reconstruction Performance:
+  MSE Loss:  0.038611
+  Mean PSNR: 14.44 dB
+
+Computational Efficiency:
+  Parameters: 647,081
+  Inference:  0.97 ms/sample
+

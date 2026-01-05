@@ -1,0 +1,52 @@
+================================================================================
+TASK 2: TRAINING WITH BIAS HANDLING - REPORT
+================================================================================
+
+CLASS IMBALANCE ANALYSIS:
+----------------------------------------
+Max samples: 430
+Min samples: 188
+Imbalance ratio: 2.29
+
+STRATEGY RESULTS:
+----------------------------------------
+
+BASELINE:
+  Accuracy:  0.6044
+  Precision: 0.5690
+  Recall:    0.6044
+  F1-Score:  0.5793
+  Epochs:    50
+
+WEIGHTED LOSS:
+  Accuracy:  0.5825
+  Precision: 0.5930
+  Recall:    0.5825
+  F1-Score:  0.5681
+  Epochs:    49
+
+FOCAL LOSS:
+  Accuracy:  0.5810
+  Precision: 0.6100
+  Recall:    0.5810
+  F1-Score:  0.5728
+  Epochs:    50
+
+AUGMENTED WEIGHTED:
+  Accuracy:  0.4584
+  Precision: 0.4849
+  Recall:    0.4584
+  F1-Score:  0.4387
+  Epochs:    39
+
+BEST STRATEGY:
+----------------------------------------
+Strategy: BASELINE
+Accuracy: 0.6044
+
+RECOMMENDATIONS:
+----------------------------------------
+1. Use class-weighted loss or focal loss for imbalanced datasets
+2. Data augmentation helps with limited training data
+3. Monitor per-class performance, not just overall accuracy
+4. Consider combining multiple strategies for best results

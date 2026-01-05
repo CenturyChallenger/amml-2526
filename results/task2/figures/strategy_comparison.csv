@@ -1,0 +1,5 @@
+Strategy,Accuracy,Precision,Recall,F1-Score,Best Epoch
+Baseline,0.6044,0.5690,0.6044,0.5793,50
+Weighted Loss,0.5825,0.5930,0.5825,0.5681,49
+Focal Loss,0.5810,0.6100,0.5810,0.5728,50
+Augmented Weighted,0.4584,0.4849,0.4584,0.4387,39
